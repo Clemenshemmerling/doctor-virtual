@@ -13,12 +13,19 @@ var db = firebase.database(),
     auth = firebase.auth()
 */
 var app = angular.module("myApp", ["ngRoute"]);
+
 app.config(function($routeProvider) {
   $routeProvider
   .when("/", {
       templateUrl : "assets/views/home/home.html"
   })
-  .when("/login", {
-      templateUrl : "assets/views/login.html"
+  .when("/medico", {
+      templateUrl : "assets/views/medico/medico.html"
   })
+  .when("/login", {
+      templateUrl : "assets/views/login/login.html"
+  })
+  .otherwise({
+          redirectTo: '/'
+  });
 });
