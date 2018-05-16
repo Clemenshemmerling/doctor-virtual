@@ -144,7 +144,8 @@ nav.navbar.navbar-expand-lg.navbar-light {
   margin: 40px 0;
 }
 
-.ctn-medico, .ctn-acerca {
+.ctn-medico, .ctn-acerca,
+.ctn-funciona {
   color: #8D8D8D;
   margin: 150px 0 50px 0;
 }
@@ -155,6 +156,22 @@ nav.navbar.navbar-expand-lg.navbar-light {
 
 .ctn-itext h5 {
   font-weight: bold;
+}
+
+.ctn-como-t {
+  margin: 100px 0;
+}
+
+.como-title {
+  color: #00a181;
+}
+
+.step {
+  margin-bottom: 40px;
+}
+
+.m {
+  margin-top: 25px;
 }
 
 .last-foot {
