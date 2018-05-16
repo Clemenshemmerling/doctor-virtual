@@ -22,6 +22,9 @@ app.config(function($routeProvider) {
   .when("/medico", {
       templateUrl : "assets/views/medico/medico.html"
   })
+  .when("/nosotros", {
+      templateUrl : "assets/views/acerca/acerca.html"
+  })
   .when("/login", {
       templateUrl : "assets/views/login/login.html"
   })
