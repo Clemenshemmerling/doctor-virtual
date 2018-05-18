@@ -14,6 +14,23 @@ var db = firebase.database(),
 */
 var app = angular.module("myApp", ["ngRoute"]);
 
+app.controller("signinCtr", function ($scope, $location) {
+  $scope.sigin = function () {
+
+    const name = $scope.name
+    const lastname = $scope.lastname
+    const email = $scope.email
+    const pass = $scope.pass
+    const country = $scope.country
+    const city = $scope.city
+    const state = $scope.state
+    const zip = $scope.zip
+    const paypal = $scope.paypal
+    const credit = $scope.credit
+
+  }
+});
+
 app.config(function($routeProvider) {
   $routeProvider
   .when("/", {
@@ -28,8 +45,12 @@ app.config(function($routeProvider) {
   .when("/como", {
       templateUrl : "assets/views/funciona/funciona.html"
   })
-  .when("/login", {
-      templateUrl : "assets/views/login/login.html"
+  .when("/comprar", {
+      templateUrl : "assets/views/comprar/comprar.html"
+  })
+  .when("/signin", {
+      templateUrl : "assets/views/signin/signin.html",
+      controller: "signinCtr"
   })
   .otherwise({
           redirectTo: '/'

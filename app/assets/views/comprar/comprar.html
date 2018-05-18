@@ -1,0 +1,110 @@
+<div class="ctn-comprar">
+  <div class="container">
+    <h1 class="first-title">Tienda</h1>
+    <div class="row ctn-itext">
+      <div class="col-sm-12 col-md-3">
+        <div class="content">
+          <a href="#">
+            <div class="content-overlay"></div>
+            <img class="content-image img-fluid" src="assets/images/Doctor-CirtuaL-planes-Medicall.png">
+            <div class="content-details fadeIn-right">
+              <button type="button" name="button" class="btn"></button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3">
+
+      </div>
+      <div class="col-sm-12 col-md-3">
+
+      </div>
+      <div class="col-sm-12 col-md-3"></div>
+    </div>
+  </div>
+</div>
+
+<style media="screen">
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 35%;
+  opacity: 1;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-right{
+  left: 20%;
+}
+
+figure.fig-foot.footer2 {
+  margin: 1em 105px !important;
+}
+
+.fig-foot.footer2 img{
+  width: 60% !important;
+}
+
+.headernosotros {
+  margin-top: 53px;
+  height: 685px;
+  background: url(../img/Web-Viajes-Primavera-nosotros-inicio.jpg);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.titulo-nosotros{
+  color: #0081c3;
+  font-size: 25px;
+  font-weight: 900;
+}
+</style>
